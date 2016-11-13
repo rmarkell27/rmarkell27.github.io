@@ -32,14 +32,17 @@
     <header>
                 <div id="indexOnly">
             <div id="indexImg">
-                <br><br><br><br><br><br>
                 <img src="http://i68.tinypic.com/kccpck.jpg" class="barrelHead" alt=""/>
-                </div> <p id="p01"> Issues of discrimination have only become more
-                    rampant in the U.S. in recent weeks. The hope of this site is that by sharing and visualizing these stories, we can all become more cognizant of the problems in our society, and learn from and support each other. </p>
-                                    <div id="customHome"><a href="http://laurho.maps.arcgis.com/apps/webappviewer/index.html?id=97eaf98dfa8d410e8f3f8a7a2038e1fb" class="btn_next" title="Next">Enter the Map</a></div>
+                </div> <p id="p01"> <font color="white"> Issues of discrimination have only become more
+                    rampant in the U.S. in recent weeks. The hope of this site is that by sharing and visualizing these stories, we can all become more cognizant of the problems in our society, and learn from and support each other. </font> </p>
+                                    <div id="customHome">
+                                        <br><br><br><br><br><br><br><br><br><br><br>
+                                        <a href="http://laurho.maps.arcgis.com/apps/webappviewer/index.html?id=97eaf98dfa8d410e8f3f8a7a2038e1fb" class="btn_next" title="Next"><b> <font color="gray">Enter the Map</font></b></a></div>
             </div>
         </div>
     </header>
+
+         <iframe width="1320 px" height="745 px" align="center" src="https://www.youtube.com/embed/LdRUYPNO-Bw?rel=0?version=3&autoplay=1&controls=0&&showinfo=0&loop=1&playlist=LdRUYPNO-Bw" ></iframe>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/js/jquery-ui-1.8.22.custom.min.js"></script>
@@ -56,51 +59,12 @@
             $('#Main').css('opacity', '0')
 
             $('#pageNavigation').css("display", "none");
-            $('#indexOnly').delay(100).animate({ opacity: 1}, 600);
-            $('#indexImg img').delay(200).animate({ top: 0}, 2000, 'swing');
-            $('#indexOnly p').delay(1500).animate({ opacity: .8}, 2000);
-            $('#customHome').delay(1500).animate({ opacity: .8}, 2000);
+            $('#indexOnly').delay(200).animate({ opacity: 1}, 600);
+            $('#indexImg img').delay(300).animate({ top: 0}, 2000, 'swing');
+            $('#indexOnly p').delay(1600).animate({ opacity: .8}, 2000);
+            $('#customHome').delay(1600).animate({ opacity: .8}, 2000);
         });
-        $(function() {
-            var BV = new $.BigVideo({useFlashForFirefox:false});
 
-        if($.browser.msie||$.browser.opera){
-            BV.init();
-            BV.show('logo.png');
-        } else {
-
-
-            
-            var vids = [
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/office_small.mp4',
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/door_small.mp4',
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/bike_small.mp4',
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/pingpong_small.mp4'
-            ];
-            vids.sort(function() { return 0.5 - Math.random() }); 
-            var vidsA = [
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/office_small.ogv',
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/book.ogv',
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/door.ogv',
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/pingpong.ogv',
-                'https://www.barrelny.com/recap/2012/wp-content/themes/barrel-portfolio/im/bike.ogv'
-            ];
-            vidsA.sort(function() { return 0.5 - Math.random() }); 
-            BV.init();
-            
-            if (Modernizr.touch) {
-                BV.show('wp-content/themes/barrel-portfolio/im/Office.jpg');
-            } else {
-                if($.browser.mozilla){
-                    BV.show(vidsA[0],  {ambient:true});
-                } else {
-                    BV.show(vids[0],  {ambient:true});
-                }
-            }
-
-           
-        }
-    });
 
     </script>
 
